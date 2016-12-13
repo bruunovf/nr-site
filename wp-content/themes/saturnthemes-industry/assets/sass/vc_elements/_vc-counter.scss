@@ -1,0 +1,11 @@
+.counter-container {
+    .counter {
+        margin-top: -38px;
+        margin-bottom: 0;
+        font-size: 50px;
+    }
+    .counter-title {
+        text-transform: capitalize;
+        color: #666;// @todo: Add customize color for meta color #666
+    }
+}

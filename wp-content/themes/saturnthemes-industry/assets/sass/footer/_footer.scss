@@ -1,0 +1,119 @@
+//General
+.site-footer {
+    .widget-title {
+        margin-bottom: 20px;
+    }
+    .textwidget {
+        p:not(:last-child) {
+            margin-bottom: 25px;
+        }
+    }
+}
+.footer-widget-container {
+    padding: 75px 0 55px;
+}
+.footer-bottom {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 1px solid transparent;
+    .widget-title {
+        margin-bottom: 0;
+    }
+}
+//Menu
+.footer-widget-container {
+    .widget {
+        margin-bottom: 20px;
+        padding-bottom: 0;
+    }
+    .menu {
+        > li {
+            padding-left: 15px;
+            border-left: 1px solid transparent;
+        }
+        a {
+            line-height: 2.4 !important;
+            font-weight: 400 !important;
+            &:before {
+                content: "\f067";
+                padding-right: 8px;
+                @extend %fontawesome;
+                font-size: 10px;
+            }
+        }
+    }
+    .widget_recent_entries {
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+//Social
+
+.footer-bottom {
+    .social-links {
+        padding-left: 20px;
+        li {
+            padding-right: 5px;
+            a {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                padding: 0;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// Back to Top
+.scrollup {
+    position: fixed;
+    z-index: 99999;
+    bottom: -40px;
+    display: block;
+    right: 32px;
+    width: 32px;
+    height: 35px;
+    opacity: 0.9;
+    text-align: center;
+    border: 2px solid #AAA;
+    border-radius: 4px;
+    color: #AAA;
+    padding: 4px;
+    &.show {
+        bottom: 48px;
+    }
+    &:hover {
+        cursor: pointer;
+        color: #FFF;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .footer-widget-container {
+        padding: 50px 0 0;
+    }
+    .footer-bottom {
+        padding-top: 40px;
+    }
+    .social-links {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding-left: 0 !important;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .footer-widget-container {
+        .menu {
+            > li {
+                display: inline-block;
+                width: 49%;
+            }
+
+        }
+    }
+}

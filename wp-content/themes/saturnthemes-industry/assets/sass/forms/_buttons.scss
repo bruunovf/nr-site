@@ -1,0 +1,43 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+#respond #submit, .button {
+    display: inline-block;
+    height: 50px;
+    line-height: 46px;
+    padding: 0 20px;
+    border: 2px solid;
+    font-weight: 700;
+    text-transform: uppercase;
+    @extend %transition;
+    cursor: pointer;
+    .fa {
+        font-size: 16px;
+        padding-right: 8px;
+    }
+}
+
+.button.primary-button {
+    color: #FFF;
+    &:hover {
+        i {
+            color: #FFF;
+        }
+    }
+}
+
+.button.secondary-button {
+    background: none;
+    &:hover {
+        color: #FFF;
+        i {
+            color: #FFF;
+        }
+    }
+}
+.button.full {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}

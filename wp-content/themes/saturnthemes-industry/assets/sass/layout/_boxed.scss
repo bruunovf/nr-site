@@ -1,0 +1,34 @@
+.page-wrapper {
+    position: relative;
+    left: 0;
+    z-index: 2;
+    background: #FFF;
+}
+
+body.boxed {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .page-wrapper {
+        margin: 30px auto 0;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    }
+}
+
+@include media-breakpoint-up(sm) {
+
+}
+
+@include media-breakpoint-up(md) {
+
+}
+
+@include media-breakpoint-up(lg) {
+    body.boxed {
+        .page-wrapper {
+            max-width: 1230px;
+        }
+    }
+}

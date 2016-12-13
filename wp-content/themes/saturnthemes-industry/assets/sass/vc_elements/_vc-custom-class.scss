@@ -1,0 +1,100 @@
+.col-no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+.inline-right {
+    text-align: right;
+}
+.inline-left {
+    text-align: left;
+}
+.group-btn-inline {
+    div.icon-btn {
+        display: inline-block;
+        margin-left: 7px;
+    }
+}
+.width-auto {
+    >.vc_column-inner {
+        width: auto !important;
+    }
+}
+.heading {
+    &.heading-border-white {
+        border-color: #FFF;
+    }
+}
+.industry-subscribe-style1,
+.industry-subscribe-style2 {
+    .mc4wp-form-fields {
+        input[type="email"] {
+            margin-right: -4px;
+        }
+    }
+    .button {
+        font-weight: 400;
+    }
+}
+
+.industry-subscribe-style2 {
+    .mc4wp-form-fields {
+        input[type="submit"].primary-button {
+            background-image: url(../img/submit-bg-hover.png);
+        }
+    }
+    input[type="email"] {
+        border-color: #FFF;
+    }
+}
+
+.wpb_image_grid .wpb_image_grid_ul .isotope-item {
+    margin: 0 !important;
+}
+.custom-contact-white {
+    .heading {
+        color: #FFF;
+    }
+    color: #FFF;
+}
+
+/* Contact Form 7 */
+.wpcf7-form {
+    p {
+        margin-bottom: 10px;
+    }
+    input:not(:submit) {
+        padding: 8px 20px;
+        &:focus {
+            background: #F8F8F8;
+        }
+    }
+    textarea {
+        padding: 18px 20px;
+    }
+}
+
+.wpcf7-form,
+.mc4wp-form-fields {
+    .wpcf7-submit,
+    input[type="submit"].primary-button {
+        padding: 0 15px 0 40px;
+        background-image: url(../img/submit-bg.png);
+        background-repeat: no-repeat;
+        background-position: 15px center;
+        &:hover {
+            background-image: url(../img/submit-bg-hover.png);
+        }
+    }
+
+}
+
+@include media-breakpoint-up(md) {
+    .industry-subscribe-style1,
+    .industry-subscribe-style2 {
+        .mc4wp-form-fields {
+            input[type="email"] {
+                width: 400px;
+            }
+        }
+    }
+}

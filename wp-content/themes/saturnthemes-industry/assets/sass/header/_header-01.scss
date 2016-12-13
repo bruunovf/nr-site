@@ -1,0 +1,9 @@
+/**
+ * Header Preset 1 + 5
+ */
+.header-01,
+.header-05 {
+    #primary-menu {
+        @extend %primary-menu-type-1;
+    }
+}

@@ -1,0 +1,92 @@
+.pagination {
+    padding: 30px 0;
+    border-top: 1px solid #EEE;
+    .page-numbers {
+        vertical-align: middle;
+        &:hover,
+        &.current {
+            color: #FFF;
+        }
+    }
+    ul.page-numbers {
+        background: none !important;
+    }
+    li,&.loop-pagination {
+        display: inline-block;
+        .page-numbers {
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            margin-right: 4px;
+            text-align: center;
+            line-height: 44px;
+            border: 2px solid;
+            font-weight: 700;
+            &.next,
+            &.prev {
+                width: auto;
+                border: none;
+                .fa {
+                    font-size: 16px;
+                }
+                &:hover {
+                    background: none;
+                    text-decoration: underline;
+                }
+            }
+            &.prev {
+                padding-right: 22px;
+                .fa {
+                    padding-right: 5px;
+                }
+            }
+            &.next {
+                padding-left: 22px;
+                .fa {
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+    &.loop-pagination {
+        .page-numbers {
+            &.next,
+            &.prev {
+                &:before,
+                &:after {
+                    @extend %fontawesome;
+                }
+            }
+            &.prev {
+                &:before {
+                    content: "\f104";
+                    padding-right: 5px;
+                }
+            }
+            &.next {
+                &:after {
+                    content: "\f105";
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+}
+.page-links {
+    @extend .pagination;
+    display: inline-block;
+    > a, > span:not(.page-links-title) {
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        margin-right: 4px;
+        text-align: center;
+        line-height: 44px;
+        border: 2px solid;
+        font-weight: 700;
+    }
+    >a:hover,
+    > span:not(.page-links-title) {
+        color: #FFF;
+    }
+}

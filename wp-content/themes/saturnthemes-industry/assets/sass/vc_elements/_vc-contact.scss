@@ -1,0 +1,43 @@
+.industry-contact-detail {
+  .heading {
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+  }
+  ul {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  .icon {
+    width: 33px;
+    float: left;
+    .fa {
+      font-size: 16px;
+    }
+  }
+  .contact-social-links {
+    padding-top: 12px;
+    li {
+      display: inline-block;
+      padding-right: 5px;
+      padding-bottom: 0;
+      a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background: #EEE;
+        color: #AAA;
+        padding: 0;
+        text-align: center;
+        &:hover {
+          color: #FFF;
+        }
+        i {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

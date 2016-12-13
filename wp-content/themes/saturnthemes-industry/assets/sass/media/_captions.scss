@@ -1,0 +1,37 @@
+.wp-caption,
+.vc_figure {
+    position: relative;
+    margin-bottom: 2.14em;
+    max-width: 100%;
+
+    img[class*="wp-image-"] {
+        @include center-block;
+    }
+
+    .wp-caption-text,
+    .vc_figure-caption {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 0 !important;
+        padding: 16px 30px;
+        background: rgba(0, 0, 0, .8);
+        color: #FFF;
+        font-size: 14px !important;
+        line-height: 1.4;
+        text-align: left;
+    }
+}
+
+.wp-caption-text {
+    text-align: center;
+}
+@include media-breakpoint-up(md) {
+    .wp-caption,
+    .vc_figure {
+        .wp-caption-text,
+        .vc_figure-caption {
+            position: absolute;
+        }
+    }
+}

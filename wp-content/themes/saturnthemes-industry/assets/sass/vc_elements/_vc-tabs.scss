@@ -1,0 +1,227 @@
+/* Tour */
+.vc_tta-tabs-position-left {
+    .vc_tta-tabs-container {
+        overflow: visible !important;
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: -100px;
+            right: 0;
+            display: block;
+            width: 2000px;
+            height: calc( 100% + 200px );
+            background: #EEE;
+        }
+    }
+    .vc_tta-tab>a {
+        padding: 17px 20px 18px !important;
+    }
+    &.vc_tta-tabs {
+        .vc_tta-tabs-container {
+            .vc_tta-tab {
+                border-bottom: 1px solid #DDD;
+                position: relative;
+                &:first-child {
+                    border-top: 1px solid #DDD;
+                }
+                &.vc_active {
+                    border-bottom: none;
+                    &:after {
+                        content: "";
+                        @extend %translate-center-y;
+                        right: 0;
+                        display: block;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 5px 6px 5px 0;
+                        border-color: transparent #fff transparent transparent;
+
+                    }
+                    > a {
+                        color: #FFF !important;
+                        border-left: 3px solid rgba( 0, 0, 0, .1 );
+                    }
+                }
+                > a {
+                    font-size: 16px;
+                    border-right: none;
+                    background: none;
+                }
+            }
+        }
+        .vc_tta-panel {
+            &.vc_active {
+                .vc_tta-panel-heading {
+                    a {
+                        color: #FFF !important;
+                    }
+                }
+            }
+        }
+    }
+    &.vc_tta.vc_general .vc_tta-panel-body {
+        padding: 14px 30px;
+    }
+}
+/* Tabs */
+.vc_tta-tabs-position-top {
+    &.vc_tta-tabs {
+        .vc_tta-tabs-container {
+            .vc_tta-tabs-list {
+                .vc_tta-tab {
+                    &.vc_active {
+                        > a {
+                            border: 2px solid #EEE;
+                            border-left: 3px solid transparent;
+                            &::after {
+                                z-index: 99999;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .vc_tta-panel-body {
+            border-width: 2px !important;
+            border-color: #EEE !important;
+            border-top: none !important;
+        }
+        &.vc_tta-controls-align-center {
+            .vc_tta-tabs-container .vc_tta-tabs-list .vc_tta-tab {
+                &.vc_active > a {
+                    border: none;
+                    background: none;
+                    span {
+                        position: relative;
+                        &:before {
+                            content: "";
+                            display: block;
+                            width: 100%;
+                            height: 2px;
+                            position: absolute;
+                            background: #01B9E6;
+                            bottom: -36px;
+                        }
+                        &:after {
+                            content: "";
+                            @extend %translate-center-x;
+                            bottom: -34px;
+                            display: block;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 0 5px 6px 5px;
+                            border-color: transparent transparent #01B9E6 transparent;
+                        }
+                    }
+                }
+                > a {
+                    margin: 0 40px;
+                    padding: 34px 0;
+                    border: none;
+                    .vc_tta-icon {
+                        display: block;
+                        padding-bottom: 15px;
+                        font-size: 30px;
+                        line-height: 1.2;
+                    }
+                    span {
+                        display: block;
+                        margin-left: 0;
+                    }
+                    &:hover {
+                        border: none;
+                        background: none;
+                        span {
+                            position: relative;
+                            &:before {
+                                content: "";
+                                display: block;
+                                width: 100%;
+                                height: 2px;
+                                position: absolute;
+                                background: #01B9E6;
+                                bottom: -36px;
+                            }
+                            &:after {
+                                content: "";
+                                @extend %translate-center-x;
+                                bottom: -34px;
+                                display: block;
+                                width: 0;
+                                height: 0;
+                                border-style: solid;
+                                border-width: 0 5px 6px 5px;
+                                border-color: transparent transparent #01B9E6 transparent;
+                            }
+                        }
+                    }
+
+                }
+            }
+            .vc_tta-panel-body {
+                border: none;
+                border-top: 2px solid #EEE !important;
+            }
+        }
+    }
+}
+.vertical-tab-with-heading {
+    .vc_tta-tabs-position-left {
+        .vc_tta-tabs-container {
+            &:before {
+                top: -180px;
+                height: calc(100% + 280px);
+            }
+        }
+    }
+}
+/* Accordion */
+.vc_tta-accordion {
+    &.vc_tta {
+        .vc_tta-panel.vc_active  {
+            .vc_tta-panel-body {
+                background: none;
+                padding: 25px 31px;
+                border-top: none;
+            }
+            .vc_tta-panel-heading {
+                background: none !important;
+                border-bottom: none;
+                border-left: 3px solid red;
+                .vc_tta-panel-title {
+                    > a {
+                        border-bottom: 2px solid #EEE;
+                    }
+                }
+            }
+        }
+        .vc_tta-panel {
+            .vc_tta-panel-body,
+            .vc_tta-panel-heading,
+            .vc_tta-tab>a {
+                border-width: 2px;
+            }
+        }
+        .vc_tta-panel-heading {
+            .vc_tta-panel-title {
+                font-size: 14px;
+                > a {
+                    padding: 14px 0;
+                    margin-left: 30px;
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+
+}
+
+
+@include media-breakpoint-up(md) {
+    .vc_tta-tabs-position-left.vc_tta-tabs .vc_tta-tabs-container .vc_tta-tab > a {
+        min-width: 370px;
+    }
+}

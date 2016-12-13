@@ -1,0 +1,38 @@
+.icon-box {
+	.icon-box-icon {
+		display: flex;
+		width: 100px;
+		height: 100px;
+		justify-content:center;
+		align-items: center;
+	}
+	.icon-box-content {
+		display: flex;
+		flex-direction: column;
+		justify-content:center;
+		min-height: 100px;
+	}
+	.icon-box-title {
+		margin-bottom: 3px;
+		font-weight: 400;
+	}
+	.icon-box-desc {
+		font-size: 16px;
+	}
+	&.left,
+	&.right {
+		overflow: hidden;
+	}
+	&.left {
+		.icon-box-icon {
+			float: left;
+			margin-right: 25px;
+		}
+	}
+	&.right {
+		padding-left: 25px;
+		.icon-box-icon {
+			float: right;
+		}
+	}
+}

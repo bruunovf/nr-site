@@ -1,0 +1,59 @@
+.services-content {
+    margin-bottom: 44px;
+        &-header {
+        position: relative;
+        margin-bottom: 31px;
+    }
+    .services-icon {
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      text-align: center;
+      background: #454545;
+      color: #FFF;
+      font-size: 24px;
+    }
+    &-title {
+        position: relative;
+        margin-bottom: 13px;
+        a {
+            display: block;
+        }
+        &:after {
+            content: "\f067";
+            @extend %fontawesome;
+            @extend %translate-center-y;
+            right: 0;
+            @extend %transition;
+            color: #AAA;
+        }
+    }
+    &:hover {
+        .services-content-title {
+            &:after {
+                content: "\f068";
+            }
+        }
+    }
+    &.style2 {
+        .services-icon {
+            position: static;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            font-size: 36px;
+        }
+        .services-content-title:after {
+            display: none;
+        }
+    }
+}
+
+.post-type-archive-services {
+    .site-main {
+        padding-bottom: 20px;
+    }
+}
