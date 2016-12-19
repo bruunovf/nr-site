@@ -1,0 +1,35 @@
+[33mcommit 3902e7e7375266859ed4cba3989440274ffdff70[m
+Author: Bruno Viana de França <Bruno Viana de França>
+Date:   Tue Dec 13 01:05:32 2016 -0200
+
+    htacess
+
+[33mcommit 83399604c48a4bb36614eb282f867a5755ec691d[m
+Author: Bruno Viana de França <Bruno Viana de França>
+Date:   Tue Dec 13 01:04:36 2016 -0200
+
+    Correções de arquivos
+
+[33mcommit bebe06b68005e6b7c8dface82162809135ad1eb7[m
+Author: Bruno Viana de França <Bruno Viana de França>
+Date:   Tue Dec 13 00:15:08 2016 -0200
+
+    alteração git ignore
+
+[33mcommit 04ba88e602649d373f45cee30229c31306597187[m
+Author: Bruno Viana de França <Bruno Viana de França>
+Date:   Tue Dec 13 00:08:33 2016 -0200
+
+    git ignore
+
+[33mcommit 089beaa581b69d9c1e374b07af88c94d04f18c34[m
+Author: Bruno Viana de França <Bruno Viana de França>
+Date:   Tue Dec 13 00:04:33 2016 -0200
+
+    wp-config removido
+
+[33mcommit 13be168d9ce362b95e7afdf17777268720b4108b[m
+Author: Bruno Viana de França <Bruno Viana de França>
+Date:   Mon Dec 12 23:52:23 2016 -0200
+
+    First Commit

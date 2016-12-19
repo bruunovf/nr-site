@@ -1,3 +1,10 @@
+.site-topbar {
+	height: 50px;
+	margin-top: -22px;
+}
+
+
+
 button,
 input[type="button"],
 input[type="reset"],
@@ -5542,7 +5549,7 @@ a {
 ## Social Menu
 --------------------------------------------------------------*/
 .social-links {
-  display: inline-block;
+  display: table-cell;
   font-size: 0;
   vertical-align: middle;
   padding: 0;
@@ -5595,6 +5602,7 @@ a {
         content: "\f09e"; }
       .social-links li a[href*="mailto:"]:before {
         content: "\f003"; }
+
 
 /*--------------------------------------------------------------
 ## Mega Menus
